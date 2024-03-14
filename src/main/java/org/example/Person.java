@@ -67,6 +67,10 @@ public class Person {
         this.address = address;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public void happyBirthday() { // Если возраст человека известен, то с момента создания объекта он может быть изменён только увеличением на единицу, через вызов метода happyBirthday()
         this.age++;
     }
