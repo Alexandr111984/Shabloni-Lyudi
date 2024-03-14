@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Objects;
+import java.util.OptionalInt;
 
 public class Person {
     private String name;
@@ -50,9 +51,9 @@ public class Person {
         return surname;
     }
 
-    public Integer getAge() {
+    public OptionalInt getAge() {
         if (hasAge())
-            return age;
+            return OptionalInt.of(age);
         return null;
     }
 
